@@ -1,0 +1,41 @@
+Esses comandos cobrem a maioria das operações diárias no Git e são fundamentais para um bom fluxo de trabalho.
+
+git config: Configura as informações do usuário, como nome e email, que serão usadas em cada commit.
+git config --global user.name "Seu Nome"
+git config --global user.email "seuemail@exemplo.com"
+
+git init: Inicializa um novo repositório Git.
+git init
+
+git clone: Faz uma cópia de um repositório existente.
+git clone <URL do repositório>
+
+git add: Adiciona arquivos ao índice (staging area).
+git add <arquivo>
+
+git commit: Salva as mudanças no repositório.
+git commit -m "Mensagem do commit"
+
+git status: Mostra o estado dos arquivos no diretório de trabalho e no índice.
+git status
+
+git push: Envia as mudanças para um repositório remoto.
+git push <nome-do-remoto> <nome-da-branch>
+
+git pull: Atualiza o repositório local com mudanças do repositório remoto.
+git pull <nome-do-remoto> <nome-da-branch>
+
+git branch: Gerencia branches (criação, listagem, exclusão).
+git branch
+git branch <nome-da-branch>
+git branch -d <nome-da-branch>
+
+git checkout: Troca de branch ou restaura arquivos.
+git checkout <nome-da-branch>
+git checkout -- <arquivo>
+
+git merge: Mescla branches.
+git merge <nome-da-branch>
+
+git log: Exibe o histórico de commits.
+git log
