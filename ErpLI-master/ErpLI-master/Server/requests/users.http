@@ -1,0 +1,31 @@
+@host = localhost:3333
+@basePath = users
+@authToken = Bearer xxx
+
+# @name List
+GET /{{basePath}} HTTP/1.1
+Host: {{host}}
+Content-Type: application/json
+Authorization: {{authToken}}
+###
+
+# @name Get
+GET /{{basePath}}/1 HTTP/1.1
+Host: {{host}}
+Content-Type: application/json
+Authorization: {{authToken}}
+###
+
+# @name Create
+POST /{{basePath}} HTTP/1.1
+Host: {{host}}
+Content-Type: application/json
+Authorization: {{authToken}}
+
+{
+  "name": "Rennan",
+  "lastname": "Cockles",
+  "email": "rennan@teste.com",
+  "password": "123456"
+}
+###
